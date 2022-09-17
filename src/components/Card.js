@@ -1,5 +1,6 @@
 import React from "react";
 import Accordion from "./Accordion";
+import { data } from "../data";
 
 const Card = () => {
   return (
@@ -13,7 +14,12 @@ const Card = () => {
           </div>
           <div className="col-12 col-lg-8">
             <div className="d-flex content-start flex-column">
-                <Accordion/>
+                {
+                    data.map(accordion => {
+                        const {id, question, answer} = accordion
+                        return <Accordion key={id} question={question} answer={answer}/>
+                    })
+                }
             </div>
           </div>
         </div>

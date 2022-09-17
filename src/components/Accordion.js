@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-const Accordion = () => {
+const Accordion = ({question,answer}) => {
   const [isHidden, setIsHidden] = useState(false);
 
   return (
     <div className="accordion-box">
       <div className="d-flex content-between py-1">
         <h4 className="accordion-heading">
-          Do I have to allow the use of cookes?
+          {question}
         </h4>
         <div className="accordion-btn-container">
           <button
@@ -55,9 +55,7 @@ const Accordion = () => {
       </div>
       {isHidden && (
         <p>
-          Unicorn vinyl poutine brooklyn, next level direct trade iceland.
-          Shaman copper mug church-key coloring book, whatever poutine normcore
-          fixie cred kickstarter post-ironic street art.
+          {answer}
         </p>
       )}
     </div>
