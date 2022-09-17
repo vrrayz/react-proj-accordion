@@ -1,9 +1,13 @@
-
+import Card from "./components/Card";
 
 function App() {
   return (
     <>
-    <h2>Accordion setup</h2>
+    <div className="d-flex content-center">
+      <div className="container-box">
+      <Card/>
+      </div>
+    </div>
     </>
   );
 }
