@@ -6,7 +6,7 @@ const Card = () => {
   return (
     <div className="card">
       <div className="card-body">
-        <div className="d-flex content-between flex-column flex-lg-row px-4 pt-3">
+        <div className="d-flex content-between flex-column flex-lg-row px-4 py-4">
           <div className="col-12 col-lg-4">
             <h3 className="accordion-title">
               Questions And Answers About Login

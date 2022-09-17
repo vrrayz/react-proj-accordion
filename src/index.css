@@ -206,10 +206,19 @@ body {
     flex-direction: row;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container-box{
     width: 330px;
     max-width: 330px;
+  }
+}
+@media (min-width: 768px) {
+  .container-box{
+    /* background-color: green; */
+    width: 60%;
+    min-width: 330px;
+    max-width: 920px;
+    margin: 64px 0px;
   }
 }
 .mt-n1{
