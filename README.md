@@ -1,1 +1,1 @@
-# Accordion Project - React project (useState, useEffect)
+# Accordion Project - React project (useState, useEffect, conditional rendering)
